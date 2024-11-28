@@ -20,7 +20,7 @@ define(['Utility', 'ArticleType'], function (Utility,ArticleType) {
          let textClass = ArticleType.getTextClassNameOf(config.articleType)
          let articleName =
              config.isAutoRepeat ?
-                 config.articleName + ' : ' + lastRepeatCount :
+                 config.articleName + ' ' + config.chapter + ' : ' + lastRepeatCount :
                  config.articleName;
          return `<tr>  
               <td class="text-center">${config.IDBIndex}</td>                               <! --id-->

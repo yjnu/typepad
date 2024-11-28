@@ -62,7 +62,7 @@ define(
 
          // 按键过滤器
          /****
-          **** ⌘ + Y F3: 重打当前段
+          **** ⌘ + I F3: 重打当前段
           **** ⌘ + K F4: 打乱当前段
           **** ⌘ + U F1: 上一段
           **** ⌘ + J F2: 下一段
@@ -71,7 +71,7 @@ define(
             if (e.key === 'Tab' || ((e.metaKey || e.ctrlKey) && (/[nqwefgplt]/.test(e.key)))) {
                // 消除一些默认浏览器快捷键的效果
                e.preventDefault();
-            } else if (((e.metaKey || e.ctrlKey) && e.key === 'y') || e.key === 'F3') {
+            } else if (((e.metaKey || e.ctrlKey) && e.key === 'i') || e.key === 'F3') {
                e.preventDefault();
                this.reset();
             } else if (((e.metaKey || e.ctrlKey) && e.key === 'k') || e.key === 'F4') {
@@ -885,6 +885,7 @@ define(
 
          // 保存记录
          // console.log(this.record, this.config)
+         this.config.repeatCountCurrent = ((this.keyCount.all - this.keyCount.function) / this.duration * 1000).toFixed(2)   //# 加
          this.database.insert(this.record, this.config);
 
          //
@@ -987,19 +988,22 @@ define(
 
          if (this.config.isAutoNext){ // 自动发文
             if (this.config.isAutoRepeat){ // 重复发文
-               if (this.config.repeatCountTotal > this.config.repeatCountCurrent){ // 还有重复次数
+               let tmp = this.record.hitRate;                      //# 加
+               this.config.repeatCountCurrent = tmp.toFixed(2);    //# 注
+               // if (this.config.repeatCountTotal > this.config.repeatCountCurrent){ // 还有重复次数  //# 注
+               if (this.config.repeatCountTotal >= this.config.repeatCountCurrent) {                 //# 加
                   if (this.config.isShuffleRepeat){ // 需要重复时乱序
                      this.shuffleCurrent();
                   } else {
                      this.reset()
                   }
-                  this.config.repeatCountCurrent++;
+                  // this.config.repeatCountCurrent++;                                               //# 注
                } else {
-                  this.config.repeatCountCurrent = 1;
+                  this.config.repeatCountCurrent = 1;                                            
                   this.nextChapter()
                }
             } else {
-               this.config.repeatCountCurrent = 1;
+               this.config.repeatCountCurrent = 1;                                               
                this.nextChapter();
             }
          }

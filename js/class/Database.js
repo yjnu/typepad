@@ -34,8 +34,9 @@ define(['Utility', 'ArticleType'], function (Utility, ArticleType) {
          let lastRepeatCount = config.repeatCountCurrent
          let articleName =
              config.isAutoRepeat ?
-             config.articleName + ' : ' + config.repeatCountCurrent :
+             config.articleName + ' ' + config.chapter + ' : ' + config.repeatCountCurrent :
              config.articleName;
+         
          let request = this.db.transaction([OBJECT_NAME], 'readwrite')
             .objectStore(OBJECT_NAME)
             .add({
