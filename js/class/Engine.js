@@ -83,9 +83,9 @@ define(
             } else if (((e.metaKey || e.ctrlKey) && e.key === 'j') || e.key === 'F2') {
                this.nextChapter();
                e.preventDefault();
-            } else if (e.key === 'Escape') {
-               this.pause();
-               e.preventDefault();
+            // } else if (e.key === 'Escape') {
+            //    this.pause();
+            //    e.preventDefault();
             } else if (Reg.KEYS.az.test(e.key) && !e.ctrlKey && !e.metaKey && !e.altKey && !this.isStarted && !this.isFinished) {
                this.start()
             }

@@ -67,6 +67,31 @@ require(['ArticleType', 'Article', 'Engine', 'Editor'],
          }
       }
 
+       document.addEventListener('keydown', function (event) {
+           if (event.key === 'Escape') {
+               event.preventDefault();
+               if (engine.isPaused) {
+                   const input = document.getElementById('pad');
+
+                   function moveCursorToEnd() {
+                       input.focus(); // 聚焦到输入框
+                       input.setSelectionRange(input.value.length, input.value.length); // 将光标移到文本末尾
+                   }
+
+                   // function moveCursorToStart() {
+                   //     input.focus();
+                   //     input.setSelectionRange(0, 0); // 将光标移到文本开头
+                   // }
+
+                   // 移动光标到末尾
+                   moveCursorToEnd();
+                   // engine.resume();
+               } else {
+                   engine.pause();
+               }
+           }
+       });
+
       // 显示历史记录
       engine.fetchAllLog();
 

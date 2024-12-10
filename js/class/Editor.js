@@ -14,7 +14,6 @@ define(['Reg', 'ArticleType', 'Article', 'Utility'], function (Reg,ArticleType, 
          let content = $('.editor-content')
          content.value = this.content;
          content.style.height = (innerHeight - 60 - 70 - 32 - 30) + 'px'
-
          // 避免主页滚动
          let app = $('body');
          app.style.height = innerHeight + 'px';
