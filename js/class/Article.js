@@ -53,51 +53,51 @@ define([
       },
       oneab: {
          name: '一简',
-         value: 'hard',
+         value: 'oneab',
          type: ArticleType.character,
          content: '你等都其花想而干吗呢给她己已',
       },
       twoab: {
          name: '二简',
-         value: 'hard',
+         value: 'twoab',
          type: ArticleType.character,
          content: '定珍燕烟科晚春餐普参与怀宁呀道平离季洋放级遇诉保审实然站变贴宾占怪胆胸尖承绿志夺睡昨后允心悄占隐列防低基原贴社阿啊际诉景铁充顺笔空敢肯卫杨限财菜率避秘降'
       },
       twore: {
         name: '二重',
-        value: 'hard',
+        value: 'twore',
         type: ArticleType.character,
         content: '觉死发贝',
       },
       threeab: {
          name: '三简',
-         value: 'hard',
+         value: 'threeab',
          type: ArticleType.character,
          content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访付竹艺私异拍'
       },
       threere: {
          name: '三重',
-         value: 'hard',
+         value: 'threere',
          type: ArticleType.character,
          content: '热街怎够两卷使',
       },
       threefull: {
          name: '三全',
-         value: 'hard',
+         value: 'threefull',
          type: ArticleType.character,
          content: '伸梅',
       },
       fourfull: {
          name: '四全',
-         value: 'hard',
+         value: 'fourfull',
          type: ArticleType.character,
          content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访付竹艺私异拍',
       },
       fourre: {
          name: '四重',
-         value: 'hard',
+         value: 'fourre',
          type: ArticleType.character,
-         content: '心',
+         content: '雨推敏赖推命致疑露礼警词庭默',
       },
       phrase: {
          name: '常用词条',
@@ -171,10 +171,7 @@ define([
          value: 'customize',
          type: ArticleType.customize,
          content: "",
-      },
-
-
-
+      }
    }
 })
 
