@@ -61,19 +61,20 @@ define([
          name: '二简',
          value: 'twoab',
          type: ArticleType.character,
-         content: '定珍燕烟科晚春餐普参与怀宁呀道平离季洋放级遇诉保审实然站变贴宾占怪胆胸尖承绿志夺睡昨后允心悄占隐列防低基原贴社阿啊际诉景铁充顺笔空敢肯卫杨限财菜率避秘降'
+         content: '定珍燕烟科晚春餐普参与怀宁呀道平离季洋放级遇保审实然站变宾占怪胆胸尖承绿志夺睡昨后允心悄占隐列防低基原贴社阿啊际诉景铁充顺笔空敢肯卫杨限财菜率避秘降'
       },
       twore: {
         name: '二重',
         value: 'twore',
         type: ArticleType.character,
-        content: '觉死发贝',
+        content: '觉死贝',
       },
       threeab: {
          name: '三简',
          value: 'threeab',
          type: ArticleType.character,
-         content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访付竹艺私异拍'
+         // content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访付竹艺私异拍'
+         content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访竹艺私异拍'
       },
       threere: {
          name: '三重',
@@ -91,13 +92,13 @@ define([
          name: '四全',
          value: 'fourfull',
          type: ArticleType.character,
-         content: '利孩刻壮讨状油待仅论付乘乖秉迫妙苦伊朗访付竹艺私异拍',
+         content: '惊满建欲单镇场该犹市仲甲港塔遭监恐靠探石告士领照摸貌督冷值脚围尚追哭郎游该登射肩速冠喊豪彻域摩刑督票柔惜察堂船掌赶恶救翻登探含牌监判鼓',
       },
       fourre: {
          name: '四重',
          value: 'fourre',
          type: ArticleType.character,
-         content: '雨推敏赖推命致疑露礼警词庭默',
+         content: '雨推敏养赖推命致疑露礼警词庭默辛凭赏',
       },
       phrase: {
          name: '常用词条',
