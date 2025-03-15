@@ -13,7 +13,7 @@
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
 a {
@@ -1541,6 +1541,7 @@ body {
 }
 
 .text {
+  font-family: "霞鹜文楷 屏幕阅读版";
   word-break: break-word;
   font-size: 2rem;
   white-space: pre-wrap;
