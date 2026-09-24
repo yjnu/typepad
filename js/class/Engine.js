@@ -537,14 +537,16 @@ define(
 
       // 重复次数 +
       repeatCountAdd(){
-         this.config.repeatCountTotal++;
+         // this.config.repeatCountTotal++;
+         this.config.repeatCountTotal = Number(this.config.repeatCountTotal) + 0.5;
          $('#repeatCountTotal').innerText = this.config.repeatCountTotal;
          this.config.save()
       }
       // 重复次数 -
       repeatCountMinus(){
          if (this.config.repeatCountTotal > 1){
-            this.config.repeatCountTotal--;
+            // this.config.repeatCountTotal--;
+            this.config.repeatCountTotal = Number(this.config.repeatCountTotal) - 0.5;
             $('#repeatCountTotal').innerText = this.config.repeatCountTotal;
             this.config.save()
          } else {
